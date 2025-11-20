@@ -1,4 +1,4 @@
-d,type,amount,currency
+id,type,amount,currency
 1,deposit,1000,USD
 2,withdrawal,50,USD
 3,deposit,5000,EUR
