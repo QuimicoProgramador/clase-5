@@ -1,0 +1,21 @@
+total_usd = 0.0
+
+try:
+    with open(filename, mode='r', encoding='utf-8') as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            # Filtramos solo USD
+            if row['currency'] == 'USD':
+                try:
+                    amount = float(row['amount'])
+                    total_usd += amount
+                except ValueError:
+                    print(f"⚠️
+ Dato corrupto en ID {row['id']}: '{row['amount']}' no es un número.")
+
+    print(f"💰
+ Volumen total en USD: ${total_usd}")
+
+except FileNotFoundError:
+    print("El archivo no existe.")
