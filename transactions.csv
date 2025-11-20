@@ -1,0 +1,5 @@
+d,type,amount,currency
+1,deposit,1000,USD
+2,withdrawal,50,USD
+3,deposit,5000,EUR
+4,payment,200,USD
