@@ -1,0 +1,3 @@
+Reporte de Ejecución
+Volumen Total USD: <module 'total_usd' from 'C:\\Users\\Sergioi\\Documents\\GitHub\\clase-5\\total_usd.py'>
+Estado: Completado
