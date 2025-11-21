@@ -1,3 +1,6 @@
+import csv
+
+filename = "transactions.csv"
 total_usd = 0.0
 
 try:
@@ -11,11 +14,9 @@ try:
                     amount = float(row['amount'])
                     total_usd += amount
                 except ValueError:
-                    print(f"⚠️
- Dato corrupto en ID {row['id']}: '{row['amount']}' no es un número.")
+                    print(f"⚠️ Dato corrupto en ID {row['id']}: '{row['amount']}' no es un número.")
 
-    print(f"💰
- Volumen total en USD: ${total_usd}")
+    print(f"💰 Volumen total en USD: ${total_usd}")
 
 except FileNotFoundError:
     print("El archivo no existe.")
